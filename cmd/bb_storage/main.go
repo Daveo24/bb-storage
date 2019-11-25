@@ -27,7 +27,7 @@ import (
 
 func main() {
 	if len(os.Args) != 2 {
-		log.Fatal("Usage: bb-storage bb-storage.jsonnet test")
+		log.Fatal("Usage: bb-storage bb-storage.jsonnet")
 	}
 
 	storageConfiguration, err := configuration.GetStorageConfiguration(os.Args[1])
