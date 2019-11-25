@@ -14,7 +14,7 @@ import (
 	"github.com/buildbarn/bb-storage/pkg/cas"
 	"github.com/buildbarn/bb-storage/pkg/configuration"
 	"github.com/buildbarn/bb-storage/pkg/opencensus"
-	"github.com/grpc-ecosystem/go-grpc-prometheus"
+	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
 	"google.golang.org/genproto/googleapis/bytestream"
@@ -27,7 +27,7 @@ import (
 
 func main() {
 	if len(os.Args) != 2 {
-		log.Fatal("Usage: bb-storage bb-storage.jsonnet")
+		log.Fatal("Usage: bb-storage bb-storage.jsonnet test")
 	}
 
 	storageConfiguration, err := configuration.GetStorageConfiguration(os.Args[1])
