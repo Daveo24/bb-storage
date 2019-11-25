@@ -6,6 +6,6 @@ def container_push_official(name, image, component):
         format = "Docker",
         image = image,
         registry = "index.docker.io",
-        repository = "buildbarn/" + component,
-        tag = "{BUILD_SCM_TIMESTAMP}-{BUILD_SCM_REVISION}",
+        repository = "daveo24/" + component,
+        tag = "latest",
     )
